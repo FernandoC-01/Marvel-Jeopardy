@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Jeopardy Round Two</title>
+    <script src="./scripts/index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-header">ROUND TWO</h1>
+      <h2 class="sub-header" id="player-turn">Player 1 Turn</h2>
+    </header>
+
+    <div class="jeopardy-board">
+      <div>
+        <div class="header">Random</div>
+        <div class="cell" id="random-200">$200</div>
+        <div class="cell" id="random-400">$400</div>
+        <div class="cell" id="random-600">$600</div>
+        <div class="cell" id="random-800">$800</div>
+        <div class="cell" id="random-1000">$1000</div>
+      </div>
+      <div>
+        <div class="header">Thor</div>
+        <div class="cell" id="thor-200">$200</div>
+        <div class="cell" id="thor-400">$400</div>
+        <div class="cell" id="thor-600">$600</div>
+        <div class="cell" id="thor-800">$800</div>
+        <div class="cell" id="thor-1000">$1000</div>
+      </div>
+      <div>
+        <div class="header">Iron Man</div>
+        <div class="cell" id="ironman-200">$200</div>
+        <div class="cell" id="ironman-400">$400</div>
+        <div class="cell" id="ironman-600">$600</div>
+        <div class="cell" id="ironman-800">$800</div>
+        <div class="cell" id="ironman-1000">$1000</div>
+      </div>
+      <div>
+        <div class="header">Locations</div>
+        <div class="cell" id="locations-200">$200</div>
+        <div class="cell" id="locations-400">$400</div>
+        <div class="cell" id="locations-600">$600</div>
+        <div class="cell" id="locations-800">$800</div>
+        <div class="cell" id="locations-1000">$1000</div>
+      </div>
+      <div>
+        <div class="header">Spider-Man</div>
+        <div class="cell" id="spiderman-200">$200</div>
+        <div class="cell" id="spiderman-400">$400</div>
+        <div class="cell" id="spiderman-600">$600</div>
+        <div class="cell" id="spiderman-800">$800</div>
+        <div class="cell" id="spiderman-1000">$1000</div>
+      </div>
+      <div>
+        <div class="header">MCU</div>
+        <div class="cell" id="mcu-200">$200</div>
+        <div class="cell" id="mcu-400">$400</div>
+        <div class="cell" id="mcu-600">$600</div>
+        <div class="cell" id="mcu-800">$800</div>
+        <div class="cell" id="mcu-1000">$1000</div>
+      </div>
+    </div>
+
+  <div class="user-input">
+    <form action="#">
+      <input type="text" placeholder="Type your answer" id="answer-input"><br>
+      <div class="bttn-con">
+        <button type="submit" id="guess-button"> GUESS</button>
+        <button type="submit" id="pass-button"> PASS</button>
+      </div>
+    </form>
+  </div>
+
+<div class="score-count">
+  <div id="player1-score">player 1 score: 0</div> 
+  <div id="player2-score">player 2 score: 0</div>
+</div>
+
+  <a class="next" href="/final-jeopardy.html" >
+    <button class="nextButton"> Final Round</button>
+  </a>
+
+  <footer> © 2024 Super Hero Jeopardy. All rights reserved.</footer>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
+

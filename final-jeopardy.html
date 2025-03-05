@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Final Jeopardy</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-header">FINAL ROUND</h1>
+      <h2 class="sub-header" id="player-turn">Player 1 Turn</h2>
+    </header>
+
+    <div class="final">
+      <div id="final-header">Final Question</div>
+      <div id="final-q" data-category="final-q">FINAL QUESTION</div>
+    </div>
+
+    <div class="score-count">
+      <div id="player1-score">player 1 score: 0</div> 
+      <div id="player2-score">player 2 score: 0</div>
+    </div>
+
+    <div class="user-input">
+      <form action="#">
+        <input type="text" placeholder="Enter bet amount" id="betScore">
+        <input type="text" placeholder="Type your answer" id="answer-input">
+        <button type="button" id="finalGuess-Button">BET</button>
+      </form>
+    </div>
+
+    <footer> © 2024 Super Hero Jeopardy. All rights reserved.</footer>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>

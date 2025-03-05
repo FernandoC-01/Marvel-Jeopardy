@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Jeopardy Round One</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-header">ROUND ONE</h1>
+      <h2 class="sub-header" id="player-turn"></h2>
+    </header>
+
+    <div class="jeopardy-board">
+      <div>
+        <div class="header">General</div>
+        <div class="cell" id="general-100">$100</div>
+        <div class="cell" id="general-200">$200</div>
+        <div class="cell" id="general-300">$300</div>
+        <div class="cell" id="general-400">$400</div>
+        <div class="cell" id="general-500">$500</div>
+      </div>
+
+      <div>
+        <div class="header">Avengers</div>
+        <div class="cell" id="avengers-100">$100</div>
+        <div class="cell" id="avengers-200">$200</div>
+        <div class="cell" id="avengers-300">$300</div>
+        <div class="cell" id="avengers-400">$400</div>
+        <div class="cell" id="avengers-500">$500</div>
+      </div>
+
+      <div>
+        <div class="header">Fantastic 4</div>
+        <div class="cell" id="fantastic4-100">$100</div>
+        <div class="cell" id="fantastic4-200">$200</div>
+        <div class="cell" id="fantastic4-300">$300</div>
+        <div class="cell" id="fantastic4-400">$400</div>
+        <div class="cell" id="fantastic4-500">$500</div>
+      </div>
+
+      <div>
+        <div class="header">X-Men</div>
+        <div class="cell" id="xmen-100">$100</div>
+        <div class="cell" id="xmen-200">$200</div>
+        <div class="cell" id="xmen-300">$300</div>
+        <div class="cell" id="xmen-400">$400</div>
+        <div class="cell" id="xmen-500">$500</div>
+      </div>
+
+      <div>
+        <div class="header">GOTG</div>
+        <div class="cell" id="gotg-100">$100</div>
+        <div class="cell" id="gotg-200">$200</div>
+        <div class="cell" id="gotg-300">$300</div>
+        <div class="cell" id="gotg-400">$400</div>
+        <div class="cell" id="gotg-500">$500</div>
+      </div>
+
+      <div>
+        <div class="header">Villains</div>
+        <div class="cell" id="villains-100">$100</div>
+        <div class="cell" id="villains-200">$200</div>
+        <div class="cell" id="villains-300">$300</div>
+        <div class="cell" id="villains-400">$400</div>
+        <div class="cell" id="villains-500">$500</div>
+      </div>
+      
+    </div>
+
+  <div class="user-input">
+    <form action="#">
+      <input type="text" placeholder="Type your answer" id="answer-input"><br>
+      <div class="bttn-con">
+        <button type="submit" id="guess-button"> GUESS</button>
+        <button type="submit" id="pass-button"> PASS</button>
+      </div>
+    </form>
+  </div>
+
+<div class="score-count">
+  <div id="player1-score">player 1 score: 0</div> 
+  <div id="player2-score">player 2 score: 0</div>
+</div>
+
+  <a class="next" href="/round-2.html">
+    <button class="nextButton"> Second Round</button>
+  </a>
+
+  <footer> © 2024 Super Hero Jeopardy. All rights reserved.</footer>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>

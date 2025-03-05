@@ -1,0 +1,272 @@
+body{
+    background: url('https://img.freepik.com/free-vector/comic-monochrome-seamless-pattern_225004-817.jpg?ga=GA1.1.1130466004.1725580849&semt=ais_hybrid'); 
+    color: #f88e31 ;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+} 
+h1, h2, .score-count{
+    text-shadow: 3px 3px 10px black;
+}
+
+/* Headers for the entire page */
+header{
+    text-align: center;
+}
+.main-header{
+    font-size: 5.5vw;
+    margin: 15px;
+}
+.sub-header{
+    font-size: 4vw;
+    font-weight: 100;
+    margin: 0;
+}
+
+#first-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+#j-img{
+    height: 50vh;
+    width: 70vw;
+}
+a {
+    text-decoration: none;
+}
+/* first page next page button */
+.bttn{
+    display: block;
+    cursor: auto;
+    margin-top: 35px;
+    padding: 10px;
+}
+.bttn button{
+    border: 2px solid #5dd761;
+    background-color: #388E3C; /* Darker Green */
+    color: white;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+.bttn button:hover {
+    color: black;
+    border: 2px solid #388E3C;
+    background-color: #5dd761; /* Vibrant Green */
+}
+
+.jeopardy-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 6 columns */
+    grid-template-rows: auto repeat(5, 1fr); /* 1 row for header, 5 rows for values */
+}
+    /* Jeopardy board category header */
+.header {
+    background-color: #D32F2F; 
+    border: 2px solid black;
+    color: white;
+    font-size: 1.4em;
+    padding: 10px;
+    text-align: center;
+}
+.cell {
+    background-color: #0057D9; 
+    border: 2px solid black;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #70cfff;
+}
+
+.user-input {
+    margin-top: 10px;
+}
+.user-input form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-input input{
+    border: 2px solid rgb(255, 56, 209);
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+}
+.bttn-con{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 305px;
+}
+.user-input button{
+    background-color: #0057D9;
+    color: white;
+    border: 2px solid #70cfff;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+.user-input button:hover{
+    border: 2px solid #0057D9;
+    background-color: #70cfff;
+}
+
+.score-count{
+    display: flex;
+    font-size: large;
+    font-weight:bolder;
+    justify-content: space-between;
+    color: #388E3C;
+    text-decoration:5px underline #5dd761;
+    margin-top: 50px;
+    height: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Rounds one and two next page button */
+.next{
+    display: block;
+    text-align: right; /* Align button to the right */
+    margin-right: 250px; 
+    cursor: auto; /* Removes the ablity to click the area*/
+    margin-top: 20px;
+}
+.next button{
+    border: 2px solid #ff4e4e;
+    background-color: #D32F2F;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    cursor: pointer; /* Makes only the button the clickable object*/
+}
+.next button:hover {
+    border: 2px solid #D32F2F;
+    background-color: #ff4e4e;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#final-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border: 2px solid #ff4e4e;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px;
+    width: 60%;
+}
+#final-q{
+    display: flex;
+    border: 2px solid #70cfff;
+    background-color: #0057D9;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+    height: 400px;
+    width: 60%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    place-self: center;
+    margin: 0;
+    margin-top: 50px;
+    width: 50%;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 850px) {
+    
+    .jeopardy-board {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr)); 
+    }
+    .header{
+        font-size: 1.1em; 
+    } 
+    .cell {
+        font-size: 1em; 
+        padding: 8px;
+    }
+
+    .bttn-con button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .score-count {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .next {
+        margin: 0;
+    }
+}
+
+/* Media Query for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .jeopardy-board {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+    }
+
+    .user-input{
+        margin: 5px;
+    }
+    .user-input input{
+        width: 200px;
+        margin: 5px;
+    }
+    .bttn-con{
+        width: 100%;
+        max-width: 215px;
+    }
+    .user-input button{
+        width: 80px;
+    }
+
+    .header, .cell {
+        font-size: 0.9em;
+        padding: 5px; 
+    }
+
+    .score-count{
+        margin-top: 20px;
+    }
+
+    footer{
+        margin-top: 20px;
+        font-size: 13px;
+        width: 100%;
+    }
+}
